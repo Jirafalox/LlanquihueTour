@@ -8,9 +8,9 @@ public class Main {
     public static void main(String[] args) {
 
         // Crear objetos de tipo Direccion
-        Direccion direccion1 = new Direccion("Calle Los Canelos", "123", "Llanquihue", "Los Lagos");
-        Direccion direccion2 = new Direccion("Av. Manuel Montt", "456", "Puerto Montt", "Los Lagos");
-        Direccion direccion3 = new Direccion("Pasaje Las Rosas", "789", "Frutillar", "Los Lagos");
+        Direccion direccion1 = new Direccion("Calle Las Torres", "911", "Llanquihue", "Los Lagos");
+        Direccion direccion2 = new Direccion("Av. Manuel Montt", "6767", "Puerto Montt", "Los Lagos");
+        Direccion direccion3 = new Direccion("Pasaje Las Rosas", "777", "Llanquihue", "Los Lagos");
 
         // Crear objetos de tipo Empleado usando composición con Direccion
         Empleado empleado1 = new Empleado("Carlos", "Soto", "12.345.678-9", "+56912345678",
