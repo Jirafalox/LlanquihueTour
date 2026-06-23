@@ -13,7 +13,7 @@ Repositorio de la entrega de la evaluación de la semana 3 de la primera experie
 ---
 
 ## 📘 Descripción general del sistema
-Este proyecto corresponde a la Primera Evaluaciónde la asignatura *Desarrollo Orientado a Objetos I*. Se trata de un sistema básico orientado a objetos que representa las personas vinculadas a la agencia de turismo Llanquihue Tour, aplicando creación de objetos, encapsulamiento, herencia y composición.
+Este proyecto corresponde a la Primera y Segunda Evaluaciónde la asignatura *Desarrollo Orientado a Objetos I*. Se trata de un sistema básico orientado a objetos que representa las personas vinculadas a la agencia de turismo Llanquihue Tour, aplicando creación de objetos, encapsulamiento, herencia y composición.
 
 
 El proyecto fue desarrollado a partir de un caso contextualizado, abordando problemáticas reales y proponiendo una solución estructurada, modular, escalable y reutilizable.
@@ -22,40 +22,57 @@ El proyecto fue desarrollado a partir de un caso contextualizado, abordando prob
 
 ## 🧱 Estructura general del proyecto
 
-src
-├── model			/**Clase de dominio
-│   ├── Persona.java		/*
-│   ├── Direccion.java		/*
-│   └── Empleado.java		/*
-└── app				/*
-    └── Main.java		/*Clase principal con el main ejecutable
-	
+LlanquihueTourApp/
+├── app/
+│   └── Main.java
+├── model/
+│   ├── Direccion.java
+│   ├── Persona.java
+│   └── Empleado.java
+├── service/
+│   └── EmpleadoService.java
+├── util/
+│   └── ArchivoUtil.java
+├── empleados.csv
+└── README.md
 ---
 
 
 
-## ⚙️ Instrucciones para clonar y ejecutar el proyecto
+# LlanquihueTourApp
 
-1. Clona el repositorio desde GitHub:
+Aplicación de consola para gestionar empleados de una empresa de turismo en la región de Llanquihue.
+Este proyecto corresponde a la actividad de la Semana 5 de Desarrollo Orientado a Objetos I en Duoc UC.
+
+## Paquetes utilizados
+
+- `model` – Clases del dominio (Direccion, Persona, Empleado)
+- `service` – Lógica de negocio (EmpleadoService)
+- `util` – Utilidades de lectura de archivos (ArchivoUtil)
+- `app` – Clase principal del programa (Main)
+
+## Clases implementadas
+
+- `Direccion` – Composición usada por Empleado
+- `Persona` – Clase base con atributos comunes
+- `Empleado` – Hereda de Persona, incluye cargo y dirección
+- `EmpleadoService` – Gestiona la lista de empleados con ArrayList
+- `ArchivoUtil` – Lee archivos .csv usando FileReader y BufferedReader
+- `Main` – Punto de entrada de la aplicación
+
+## Instrucciones para ejecutar
+
+1. Asegúrate de tener el archivo `empleados.csv` en la raíz del proyecto (al mismo nivel que las carpetas `model`, `service`, etc.).
+2. Compila todos los archivos desde la raíz del proyecto:
 
 ```bash
-git clone https://github.com/Jirafalox/LlanquihueTour
+javac model/*.java util/*.java service/*.java app/*.java
 ```
 
-2. Abre el proyecto en IntelliJ IDEA.
+3. Ejecuta la clase principal:
 
-3. Verifica que los archivos `.txt` estén correctamente ubicados.
+```bash
+java app.Main
+```
 
-4. Ejecuta el archivo `Main.java` desde el paquete `app`.
-
-5. Sigue las instrucciones en consola
-
-
----
-
-**Repositorio GitHub:** \https://github.com/Jirafalox/LlanquihueTour
-**Fecha de entrega:** \08/06/2026
-
----
-
-© Duoc UC | Escuela de Informática y Telecomunicaciones | Evaluación Final Transversal EFT
+4. El programa cargará los empleados desde el CSV, los mostrará en consola y realizará una búsqueda por nombre.
