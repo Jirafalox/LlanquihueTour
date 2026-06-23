@@ -62,11 +62,11 @@ Este proyecto corresponde a la actividad de la Semana 5 de Desarrollo Orientado 
 
 ## Instrucciones para ejecutar
 
-1. Asegúrate de tener el archivo `empleados.csv` en la raíz del proyecto (al mismo nivel que las carpetas `model`, `service`, etc.).
+1. Asegúrate de tener el archivo `empleados.csv` en la raíz del proyecto (al mismo nivel que las carpetas `model`, `util`, etc.).
 2. Compila todos los archivos desde la raíz del proyecto:
 
 ```bash
-javac model/*.java util/*.java service/*.java app/*.java
+javac model/*.java util/*.java  app/*.java
 ```
 
 3. Ejecuta la clase principal:
