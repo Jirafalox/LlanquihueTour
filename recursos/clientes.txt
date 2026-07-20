@@ -1,0 +1,4 @@
+Camila Rojas;18234567-9;camila.rojas@correo.cl;3
+Matias Fuentes;17456789-2;matias.fuentes@correo.cl;1
+Francisca Diaz;16789234-k;francisca.diaz@correo.cl;5
+Ignacio Torres;19012345-3;ignacio.torres@correo.cl;0
