@@ -1,6 +1,6 @@
 # LlanquihueTourEFT
 
-Prototipo de sistema de gestión desarrollado para la agencia de turismo **Llanquihue Tour**, como Evaluación Final Transversal de la asignatura Desarrollo Orientado a Objetos I. 
+Prototipo de sistema de gestión desarrollado para la agencia de turismo **Llanquihue Tour**, como Evaluación Final Transversal de la asignatura Desarrollo Orientado a Objetos I.
 
 ## Descripción general del sistema
 
@@ -32,6 +32,8 @@ src/
 │   └── LectorArchivo.java        (lee recursos/clientes.txt y genera objetos Cliente)
 └── app/
     └── Main.java                 (punto de entrada del programa)
+    └── MenuInteractivo		  (interfaz gráfica del programa para el usuario)
+	
 
 recursos/
 └── clientes.txt                  (datos de prueba para la carga de clientes)
@@ -60,5 +62,3 @@ recursos/
 6. El programa mostrará por consola, en orden: la carga de clientes desde archivo, el registro de guías/operadores/proveedores, y la gestión de reservas.
 
 > Requisito: JDK 17 o superior.
-
-
